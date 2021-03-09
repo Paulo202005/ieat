@@ -5,5 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_one :restaurant
+  has_one :orders
   enum role: [:admin, :restaurant, :customer]
 end
